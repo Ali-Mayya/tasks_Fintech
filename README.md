@@ -38,7 +38,7 @@ The chosen evaluation metrics are suitable for the image classification task, pr
 ---
 
 # Task 2: Database SQL-Python
-In this task, I utilized SQLite to organize the database for employee information. The choice of SQLite was driven by its simplicity, user-friendliness, and my prior experience with the technology. The database file was named "company_Insta_Perm.db," and it featured a single table called "employee."
+In this task, I utilized SQLite to organize the database for employee information. The choice of SQLite was driven by its simplicity, user-friendliness, and my prior experience with the technology. The database file was named "company_Insta_FineTech," and it featured a single table called "employee."
 
 ## Table Structure
 The "employee" table includes the following columns:
