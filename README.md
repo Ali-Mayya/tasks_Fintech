@@ -74,6 +74,46 @@ Moreover, the decision to employ a single-table structure for the database was p
 ---
 
 *Note: The provided script showcases efficient interaction with an SQLite database for managing employee records. 
+# Task3: Integration with Google API
+
+In this Python script, we integrated with the Google Geocoding API to retrieve latitude and longitude coordinates for a given address. The code is organized as follows:
+
+## Function for Geocoding Data
+
+The core functionality is wrapped within the `get_geocoding_data` function, which takes the API key and address as input. This function sends a request to the Google Geocoding API and processes the response to extract the geocoding data (latitude and longitude).
+
+## API Request and Error Handling
+
+We used the `requests` library to make an API request to the Google Geocoding service. The code is designed with a try-except block to handle potential errors, such as connectivity issues or invalid API keys. This ensures smooth execution and user-friendliness.
+
+## Data Processing and Output
+
+After obtaining the API response, the code processes the JSON data to extract the geocoding information. We check the 'status' field to confirm if the request was successful. If the status is 'OK', we extract and print the latitude and longitude data. In case of an error, an appropriate error message is displayed.
+
+# Justification and Benefits
+
+The following are the benefits of the methods used in the script:
+
+## Function Modularity
+
+By encapsulating the core logic within the `get_geocoding_data` function, the code becomes more organized and modular. This approach enhances code readability and allows easy reuse for different addresses and API keys.
+
+## Ease of API Interaction
+
+The `requests` library simplifies making API requests, handling the complexities of HTTP communication. Its simple syntax and wide usage make it a suitable choice for this task.
+
+## Error Handling
+
+The try-except block ensures graceful handling of errors during API requests. Instead of abrupt program termination, users receive informative error messages, aiding in debugging and providing a better user experience.
+
+## JSON Data Processing
+
+The script processes the API response, which is typically in JSON format, to extract the required geocoding data. JSON is a lightweight and easy-to-read data interchange format, commonly used in web APIs.
+
+## User-Friendly Output
+
+The script presents the obtained geocoding data in a clear and concise format, with explicit information about the address, latitude, and longitude. This user-friendly approach improves script usability.
+
 
 
 In summary, the code effectively integrates with the Google Geocoding API, retrieves geocoding data for a specified address, and presents the results in a user-friendly manner. The chosen methods and organization enhance code modularity, error handling, data processing, and overall user experience when interacting with the API.
