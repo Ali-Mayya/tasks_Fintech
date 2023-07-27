@@ -70,21 +70,24 @@ print(classification_rep)
 
 ##printing the results
 
-import random
+import random 
 
 cpt = 0
 c = 0
 predict = list()
-print(" the number corresponding to the classified images ")
+
+plt.figure(0,figsize=(7,6))
+print("The number corresponding to the classified images")
+
 for i in range(1, 21):
     cpt = cpt + 1
-    # /content/images/images/train/angry/0.jpg
-    plt.subplot(7, 5, cpt)
+    plt.subplot(4, 5, cpt)
     plt.imshow(x_test[cpt])
+    plt.title(f"Num is: {y_pred_classes[cpt]}")  # Add the prediction value as caption
+    plt.axis('off')  # Remove axis ticks and labels
     predict.append(y_pred_classes[cpt])
     if (i % 5 == 0):
         print(predict[c:c + i])
         c = i
 
-# plt.tight_layout()
 plt.show()
