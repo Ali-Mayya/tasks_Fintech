@@ -36,4 +36,41 @@ The code uses ImageDataGenerator to apply rotation data augmentation to the trai
 The chosen evaluation metrics are suitable for the image classification task, providing a comprehensive view of the model's performance on the MNIST dataset.
 
 ---
+% Task 2: Database SQL-Python
+
+In Task 2, I utilized SQLite for organizing the database due to its simplicity, user-friendliness, and my prior experience with the technology. I created a dedicated SQLite database file named "company_Insta_Perm.db" and designed a table called "employee" to efficiently store essential information about employees. The "employee" table incorporates the following columns:
+
+\begin{itemize}
+    \item \textbf{id} (INTEGER PRIMARY KEY): A unique identifier for each employee, serving as the primary key for data integrity.
+    \item \textbf{name} (TEXT NOT NULL): The name of the employee, stored as text to accommodate diverse names.
+    \item \textbf{age} (INTEGER NOT NULL): The age of the employee, represented as an integer for precise numerical storage.
+    \item \textbf{position} (TEXT NOT NULL): The job position or title of the employee, stored as text to allow descriptive entries.
+    \item \textbf{city} (TEXT NOT NULL): The city where the employee is based, also stored as text to accommodate various locations.
+\end{itemize}
+
+To interact with the "employee" table, the code includes four vital functions:
+
+\subsection{Add Data (add_data)}
+
+The \textit{add_data} function enables the addition of new employee records to the "employee" table. By taking input parameters such as the employee's name, age, position, and city, it inserts the provided data using the SQL `INSERT` command. Subsequently, the function ensures the successful addition of data by committing the changes to the database.
+
+\subsection{Get Data (get_data)}
+
+The \textit{get_data} function facilitates the retrieval of employee records based on specified conditions from the "employee" table. It employs the SQL `SELECT` command to filter data according to the provided query conditions. Upon finding the matched records, the function fetches and displays them on the console, enabling convenient data extraction.
+
+\subsection{Update Data (update_data)}
+
+The \textit{update_data} function empowers the updating of employee records in the "employee" table based on specified conditions. It uses the SQL `UPDATE` command to modify the relevant data fields as per the new values provided in the query. To ensure data consistency, the function commits the changes to the database after updating the records.
+
+\subsection{Delete Data (delete_data)}
+
+Lastly, the \textit{delete_data} function provides the capability to delete employee records based on specific criteria. Using the SQL `DELETE` command, it identifies and removes the desired data entries from the "employee" table. Like the other functions, this function ensures the permanence of data removal by committing the changes to the database.
+
+SQLite proves to be an ideal choice for this project due to its lightweight and serverless nature. As a self-contained, file-based database management system, SQLite eliminates the need for a separate database server, making it particularly suitable for small-scale projects or prototypes. The ease of installation and setup, along with my prior experience with SQLite, expedited the development process and streamlined the interaction with the database.
+
+Moreover, the decision to employ a single-table structure for the database was pragmatic, as it allows a clear and concise demonstration of basic CRUD operations. This simplicity enables readers to grasp the essence of the code effortlessly, making it an ideal choice for showcasing employee record management.
+
+---
+
+*Note: The provided script showcases efficient interaction with an SQLite database for managing employee records. Feel free to use and adapt this code for similar database tasks in your projects.*
 
