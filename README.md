@@ -1,5 +1,5 @@
 # tasks_Fintech
-# Task1 : mage Classification with Data Augmentation
+# Task1 : Images Classification in MNIST with Data Augmentation
 
 This Python code demonstrates a simple image classification task using the MNIST dataset. The goal is to recognize handwritten digits (0 to 9) from grayscale images. The code utilizes TensorFlow and Keras to build and train a neural network for this classification task.
 
@@ -70,10 +70,9 @@ SQLite proves to be an ideal choice for this project due to its lightweight and 
 
 Moreover, the decision to employ a single-table structure for the database was pragmatic, as it allows a clear and concise demonstration of basic CRUD operations. This simplicity enables readers to grasp the essence of the code effortlessly, making it an ideal choice for showcasing employee record management.
 ---
-
+*Note: The provided script showcases efficient interaction with an SQLite database for managing employee records. 
 ---
 
-*Note: The provided script showcases efficient interaction with an SQLite database for managing employee records. 
 # Task3: Integration with Google API
 
 In this Python script, we integrated with the Google Geocoding API to retrieve latitude and longitude coordinates for a given address. The code is organized as follows:
