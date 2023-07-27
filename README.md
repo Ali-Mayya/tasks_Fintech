@@ -36,7 +36,7 @@ The code uses ImageDataGenerator to apply rotation data augmentation to the trai
 The chosen evaluation metrics are suitable for the image classification task, providing a comprehensive view of the model's performance on the MNIST dataset.
 
 ---
-% Task 2: Database SQL-Python
+# Task 2: Database SQL-Python
 
 In Task 2, I utilized SQLite for organizing the database due to its simplicity, user-friendliness, and my prior experience with the technology. I created a dedicated SQLite database file named "company_Insta_Perm.db" and designed a table called "employee" to efficiently store essential information about employees. The "employee" table incorporates the following columns:
 
@@ -69,6 +69,7 @@ Lastly, the \textit{delete_data} function provides the capability to delete empl
 SQLite proves to be an ideal choice for this project due to its lightweight and serverless nature. As a self-contained, file-based database management system, SQLite eliminates the need for a separate database server, making it particularly suitable for small-scale projects or prototypes. The ease of installation and setup, along with my prior experience with SQLite, expedited the development process and streamlined the interaction with the database.
 
 Moreover, the decision to employ a single-table structure for the database was pragmatic, as it allows a clear and concise demonstration of basic CRUD operations. This simplicity enables readers to grasp the essence of the code effortlessly, making it an ideal choice for showcasing employee record management.
+---
 
 ---
 
