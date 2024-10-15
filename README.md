@@ -1,4 +1,4 @@
-# tasks_Fintech
+# Fintech : Images Classification_Database SQL-Python_Integration with Google API
 # Task1 : Images Classification in MNIST with Data Augmentation
 
 This Python code demonstrates a simple image classification task using the MNIST dataset. The goal is to recognize handwritten digits (0 to 9) from grayscale images. The code utilizes TensorFlow and Keras to build and train a neural network for this classification task.
